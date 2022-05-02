@@ -1,0 +1,16 @@
+.idea
+.project
+.settings
+.externalToolBuilders
+
+qzip-dist
+qzip-out
+
+node_modules
+package-lock.json
+
+renderer
+
+cos-config.json
+
+*.log
