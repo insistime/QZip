@@ -1,14 +1,13 @@
 {
   "name": "qzip",
   "version": "0.0.1",
-  "private": true,
-  "description": "qzip demo",
+  "description": "",
   "keywords": [],
   "author": "uikoo9 <uikoo9@qq.com>",
-  "homepage": "",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xxx/xxx.git"
+    "url": "git+https://github.com:insistime/QZip.git"
   },
   "scripts": {
     "init-pack": "npm i",
@@ -26,9 +25,6 @@
     "packmac": "qziplectron pm ./qzip-pack/qzip.config.js",
     "packdmg": "qziplectron pd ./qzip-pack/qzip.config.js",
     "uploaddmg": "qziplectron ud ./qzip-pack/qzip.config.js"
-  },
-  "bugs": {
-    "url": ""
   },
   "devDependencies": {
     "electron": "^18.2.0",

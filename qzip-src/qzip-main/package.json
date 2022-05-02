@@ -1,7 +1,7 @@
 {
   "name": "qzip",
   "version": "0.0.1",
-  "description": "qzip main demo",
+  "description": "qzip main",
   "main": "./main/main.js",
   "dependencies": {
     "qiao-electron": "^0.9.9"

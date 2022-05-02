@@ -1,22 +1,18 @@
 {
   "name": "qzip",
   "version": "0.0.1",
-  "description": "qzip renderer demo",
+  "description": "qzip renderer",
   "keywords": [],
   "author": "uikoo9 <uikoo9@qq.com>",
-  "homepage": "",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xxx/xxx.git"
+    "url": "git+https://github.com:insistime/QZip.git"
   },
   "scripts": {
     "dev": "qwebpack dev ./webpack/qiao.webpack.js",
     "build": "qwebpack build ./webpack/qiao.webpack.js",
     "analyzer": "qwebpack analyzer ./webpack/qiao.webpack.js"
-  },
-  "bugs": {
-    "url": ""
   },
   "devDependencies": {
     "qiao-webpack": "^0.3.3"
