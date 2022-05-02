@@ -7,3 +7,4 @@
 1. init project
 2. icns
 3. packmac
+4. bg
