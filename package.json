@@ -20,11 +20,11 @@
     "start": "electron qzip-src/qzip-main",
     "debug": "electron qzip-src/qzip-main --inspect=5858",
     "dev": "electron qzip-src/qzip-main dev",
-    "dist": "qziplectron d ./qzip-pack/qzip.config.js",
+    "dist": "qelectron d ./qzip-pack/qzip.config.js",
     "prepackmac": "npm run build && npm run dist",
-    "packmac": "qziplectron pm ./qzip-pack/qzip.config.js",
-    "packdmg": "qziplectron pd ./qzip-pack/qzip.config.js",
-    "uploaddmg": "qziplectron ud ./qzip-pack/qzip.config.js"
+    "packmac": "qelectron pm ./qzip-pack/qzip.config.js",
+    "packdmg": "qelectron pd ./qzip-pack/qzip.config.js",
+    "uploaddmg": "qelectron ud ./qzip-pack/qzip.config.js"
   },
   "devDependencies": {
     "electron": "^18.2.0",
