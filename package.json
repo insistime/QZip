@@ -20,6 +20,7 @@
     "start": "electron qzip-src/qzip-main",
     "debug": "electron qzip-src/qzip-main --inspect=5858",
     "dev": "electron qzip-src/qzip-main dev",
+    "icon": "qelectron icon ./qzip-pack/static/icon/pic.png",
     "dist": "qelectron d ./qzip-pack/qzip.config.js",
     "prepackmac": "npm run build && npm run dist",
     "packmac": "qelectron pm ./qzip-pack/qzip.config.js",
@@ -28,6 +29,6 @@
   },
   "devDependencies": {
     "electron": "^18.2.0",
-    "qiao-electron-cli": "^0.5.5"
+    "qiao-electron-cli": "^0.5.9"
   }
 }
