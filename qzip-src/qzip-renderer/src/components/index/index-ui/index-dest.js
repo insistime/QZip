@@ -7,12 +7,12 @@ import React from 'react';
 import { IndexConstant } from '../_constant.js';
 
 /**
- * index console
+ * index dest
  */
-export default class IndexConsole extends React.Component {
+export default class IndexDest extends React.Component {
     render() {
         return (
-            <div className='index-console'>
+            <div className='index-dest'>
             </div>
         );
     }

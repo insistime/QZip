@@ -1,13 +1,52 @@
-$pageWidth: 1400px;
-$pageHeight: 900px - 28px;
+$pageWidth: 300px;
+$pageHeight: 428px - 28px;
+
+$destHeight: 200px;
+$srcHeight: 140px;
+$btnHeight: $pageHeight - $destHeight - $srcHeight;
+
+$btnBtnWidth: 100px;
+$btnBtnHeight: 40px;
 
 #root {
     width: $pageWidth;
     height: $pageHeight;
-    background-color: #1C2432;
+    background-color: #fff;
 
     .index-container{
         width: $pageWidth;
         height: $pageHeight;
+
+        .index-dest{
+            width: $pageWidth;
+            height: $destHeight;
+            background-color: blue;
+        }
+        .index-src{
+            width: $pageWidth;
+            height: $srcHeight;
+            background-color: red;
+        }
+        .index-btn{
+            width: $btnBtnWidth;
+            height: $btnBtnHeight;
+            padding-top: ($btnHeight - $btnBtnHeight) / 2;
+            padding-bottom: ($btnHeight - $btnBtnHeight) / 2;
+            padding-left: ($pageWidth - $btnBtnWidth) / 2;
+            padding-right: ($pageWidth - $btnBtnWidth) / 2;
+
+            .btn{
+                width: $btnBtnWidth;
+                height: $btnBtnHeight;
+                background-color: gray;
+                color: #fff;
+                font-size: 18px;
+                line-height: $btnBtnHeight;
+                text-align: center;
+                border-radius: 2px;
+                cursor: pointer;
+                user-select: none;
+            }
+        }
     }
 }

@@ -22,9 +22,14 @@ export default class IndexContainer extends React.Component {
     };
   }
 
+  clickGo(){
+    console.log(1);
+  }
+
   render() {
     return (
       <IndexComponent
+        clickGo = {this.clickGo}
       />
     );
   }
