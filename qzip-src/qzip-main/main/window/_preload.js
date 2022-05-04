@@ -21,9 +21,7 @@ const getAllPreloads = () => {
         clickGoIPC,
     };
 
-    const s = getPreloads(customPreloads);
-    console.log(s);
-    return s;
+    return getPreloads(customPreloads);
 };
 
 // preload
