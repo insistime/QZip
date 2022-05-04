@@ -1,9 +1,11 @@
 $pageWidth: 300px;
-$pageHeight: 428px - 28px;
+$pageHeight: 388px - 28px;
 
-$destHeight: 200px;
-$srcHeight: 140px;
-$btnHeight: $pageHeight - $destHeight - $srcHeight;
+$dragHeight: 200px;
+$pathHeight: 100px;
+$btnHeight: $pageHeight - $dragHeight - $pathHeight;
+
+$pathDivHeight: 30px;
 
 $btnBtnWidth: 100px;
 $btnBtnHeight: 40px;
@@ -17,15 +19,55 @@ $btnBtnHeight: 40px;
         width: $pageWidth;
         height: $pageHeight;
 
-        .index-dest{
+        .index-drag{
             width: $pageWidth;
-            height: $destHeight;
+            height: $dragHeight;
             background-color: blue;
         }
-        .index-src{
+        .index-path{
             width: $pageWidth;
-            height: $srcHeight;
-            background-color: red;
+            height: $pathHeight;
+
+            > div{
+                width: $pageWidth;
+                height: $pathHeight / 2;
+
+                > div{
+                    float: left;
+                }
+            }
+
+            .label{
+                width: 50px;
+                height: $pathDivHeight;
+                margin: ((($pathHeight / 2) - $pathDivHeight) / 2) auto;
+                color: #333;
+                font-size: 16px;
+                text-align: center;
+                line-height: $pathDivHeight;
+                user-select: none;
+            }
+            .input{
+                width: 170px - 2px;
+                height: $pathDivHeight - 2px;
+                margin: ((($pathHeight / 2) - $pathDivHeight) / 2) auto;
+                border: solid 1px #333;
+                background-color: rgb(199, 199, 199);
+            }
+            .btn{
+                width: 60px;
+                height: $pathDivHeight;
+                margin: ((($pathHeight / 2) - $pathDivHeight) / 2) 10px;
+                background-color: gray;
+                color: #fff;
+                font-size: 14px;
+                text-align: center;
+                line-height: $pathDivHeight;
+                text-align: center;
+                border-radius: 2px;
+                cursor: pointer;
+                user-select: none;
+            }
         }
         .index-btn{
             width: $btnBtnWidth;

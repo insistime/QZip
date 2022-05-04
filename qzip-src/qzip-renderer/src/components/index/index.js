@@ -22,13 +22,23 @@ export default class IndexContainer extends React.Component {
     };
   }
 
+  clickReset(){
+    console.log('reset');
+  }
+
+  clickPick(){
+    console.log('pick');
+  }
+
   clickGo(){
-    console.log(1);
+    console.log('go');
   }
 
   render() {
     return (
       <IndexComponent
+        clickReset = {this.clickReset}
+        clickPick = {this.clickPick}
         clickGo = {this.clickGo}
       />
     );
