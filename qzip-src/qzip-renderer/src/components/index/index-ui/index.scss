@@ -1,9 +1,8 @@
 $pageWidth: 300px;
-$pageHeight: 388px - 28px;
+$pageHeight: 188px - 28px;
 
-$dragHeight: 200px;
 $pathHeight: 100px;
-$btnHeight: $pageHeight - $dragHeight - $pathHeight;
+$btnHeight: $pageHeight - $pathHeight;
 
 $pathDivHeight: 30px;
 
@@ -19,11 +18,6 @@ $btnBtnHeight: 40px;
         width: $pageWidth;
         height: $pageHeight;
 
-        .index-drag{
-            width: $pageWidth;
-            height: $dragHeight;
-            background-color: blue;
-        }
         .index-path{
             width: $pageWidth;
             height: $pathHeight;

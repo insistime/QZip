@@ -15,22 +15,22 @@ export default class IndexPath extends React.Component {
             <div className='index-path'>
                 <div className='index-src'>
                     <div className='label'>
-                        src
+                        {IndexConstant.srcText}
                     </div>
                     <div className='input'>
                     </div>
-                    <div className='btn' onClick={this.props.clickReset}>
-                        重置
+                    <div className='btn' onClick={this.props.clickPickSrc}>
+                        {IndexConstant.srcBtn}
                     </div>
                 </div>
                 <div className='index-dest'>
                     <div className='label'>
-                        dest
+                        {IndexConstant.destText}
                     </div>
                     <div className='input'>
                     </div>
-                    <div className='btn' onClick={this.props.clickPick}>
-                        选择
+                    <div className='btn' onClick={this.props.clickPickDest}>
+                        {IndexConstant.destBtn}
                     </div>
                 </div>
             </div>

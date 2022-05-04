@@ -8,6 +8,9 @@ import IndexComponent from './index-ui/index.js';
 
 // index func
 import {
+  clickPickSrc,
+  clickPickDest,
+  clickGo,
 } from './index-fn/index.js';
 
 /**
@@ -18,28 +21,15 @@ export default class IndexContainer extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-    };
-  }
-
-  clickReset(){
-    console.log('reset');
-  }
-
-  clickPick(){
-    console.log('pick');
-  }
-
-  clickGo(){
-    console.log('go');
+    this.state = {};
   }
 
   render() {
     return (
       <IndexComponent
-        clickReset = {this.clickReset}
-        clickPick = {this.clickPick}
-        clickGo = {this.clickGo}
+        clickPickSrc = {clickPickSrc}
+        clickPickDest = {clickPickDest}
+        clickGo = {clickGo}
       />
     );
   }

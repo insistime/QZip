@@ -13,7 +13,7 @@ export default class IndexBtn extends React.Component {
     render() {
         return (
             <div className='index-btn'>
-                <div className='btn' onClick={this.props.clickGo}>go</div>
+                <div className='btn' onClick={this.props.clickGo}>{IndexConstant.goText}</div>
             </div>
         );
     }

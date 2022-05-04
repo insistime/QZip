@@ -12,6 +12,6 @@ module.exports = {
 
     // WINDOW INDEX
     WINDOW_INDEX_WIDTH      : 300,
-    WINDOW_INDEX_HEIGHT     : 600,
+    WINDOW_INDEX_HEIGHT     : 188,
     WINDOW_INDEX_COLOR      : '#fff',
 };
