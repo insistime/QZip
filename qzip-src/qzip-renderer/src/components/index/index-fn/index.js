@@ -1,13 +1,25 @@
 'use strict';
 
-export const clickPickSrc = () => {
-    console.log('pick src');
+/**
+ * clickPickSrc
+ */
+export const clickPickSrc = async () => {
+    const res = await window.electron.clickPickSrcIPC();
+    console.log('pick src', path);
 }
 
-export const clickPickDest = () => {
-    console.log('pick dest');
+/**
+ * clickPickDest
+ */
+export const clickPickDest = async () => {
+    const res = await window.electron.clickPickDestIPC();
+    console.log('pick dest', res);
 }
 
-export const clickGo = () => {
-    console.log('go');
+/**
+ * clickGo
+ */
+export const clickGo = async () => {
+    const res = await window.electron.clickGoIPC();
+    console.log('go', res);
 }

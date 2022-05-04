@@ -14,4 +14,9 @@ module.exports = {
     WINDOW_INDEX_WIDTH      : 300,
     WINDOW_INDEX_HEIGHT     : 188,
     WINDOW_INDEX_COLOR      : '#fff',
+
+    // IPC ZIP
+    IPC_ZIP_CLICK_SRC       : 'ipc-zip-click-src',
+    IPC_ZIP_CLICK_DEST      : 'ipc-zip-click-dest',
+    IPC_ZIP_CLICK_GO        : 'ipc-zip-click-go',
 };
