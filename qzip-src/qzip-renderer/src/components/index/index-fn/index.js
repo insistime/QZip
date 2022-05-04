@@ -5,7 +5,7 @@
  */
 export const clickPickSrc = async () => {
     const res = await window.electron.clickPickSrcIPC();
-    console.log('pick src', path);
+    console.log('pick src', res);
 }
 
 /**

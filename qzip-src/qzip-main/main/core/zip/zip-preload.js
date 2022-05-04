@@ -13,20 +13,20 @@ const {
 /**
  * clickPickSrcIPC
  */
-export const clickPickSrcIPC = async () => {
+exports.clickPickSrcIPC = async () => {
     return await ipcRenderer.invoke(IPC_ZIP_CLICK_SRC);
-}
+};
 
 /**
  * clickPickDestIPC
  */
-export const clickPickDestIPC = async () => {
+exports.clickPickDestIPC = async () => {
     return await ipcRenderer.invoke(IPC_ZIP_CLICK_DEST);
-}
+};
 
 /**
  * clickGoIPC
  */
-export const clickGoIPC = async () => {
+exports.clickGoIPC = async () => {
     return await ipcRenderer.invoke(IPC_ZIP_CLICK_GO);
-}
+};
