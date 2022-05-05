@@ -15,32 +15,19 @@ var output = require('./output.js');
 // plugins
 var plugins = require('./plugins.js');
 
+// optimization
+var optimization = require('./optimization.js');
+
 /**
  * qiao.webpack.js
  */
 module.exports = {
-  devServer : dev,
-  entry     : entry,
-  output    : output,
-  plugins   : plugins,
-  resolve   : {
+  devServer   : dev,
+  entry       : entry,
+  output      : output,
+  plugins     : plugins,
+  resolve     : {
     alias: alias,
   },
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        react: {
-          test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
-          name: 'react',
-          chunks: 'all',
-          priority: 0,
-          reuseExistingChunk: true,
-        },
-        default: {
-          priority: -20,
-          reuseExistingChunk: true,
-        },
-      },
-    },
-  },
+  optimization: optimization,
 };
