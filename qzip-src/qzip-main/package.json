@@ -4,7 +4,7 @@
   "description": "qzip main",
   "main": "./main/main.js",
   "dependencies": {
-    "qiao-electron": "^1.0.1"
+    "qiao-electron": "^1.0.4"
   },
   "scripts": {}
 }
