@@ -15,7 +15,7 @@
     "analyzer": "qwebpack analyzer ./webpack/qiao.webpack.js"
   },
   "devDependencies": {
-    "qiao-webpack": "^0.3.3"
+    "qiao-webpack": "^0.3.7"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",

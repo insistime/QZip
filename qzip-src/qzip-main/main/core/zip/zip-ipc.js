@@ -3,6 +3,9 @@
 // electron
 const { ipcMain } = require('electron');
 
+// open file
+const { dialogOpenFile } = require('qiao-electron');
+
 // const
 const { 
     IPC_ZIP_CLICK_SRC,
@@ -12,11 +15,15 @@ const {
 
 // ipc zip click src
 ipcMain.handle(IPC_ZIP_CLICK_SRC, async () => {
+    const res = await dialogOpenFile();
+    console.log(res);
     return 1;
 });
 
 // ipc zip click dest
 ipcMain.handle(IPC_ZIP_CLICK_DEST, async () => {
+    const res = await dialogOpenFile();
+    console.log(res);
     return 2;
 });
 
