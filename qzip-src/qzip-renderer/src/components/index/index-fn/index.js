@@ -15,9 +15,22 @@ export const clickPickSrc = async (that) => {
 /**
  * clickPickDest
  */
-export const clickPickDest = async () => {
+export const clickPickDest = async (that) => {
+    // check
+    const src = that.state.srcPath;
+    if(!src){
+        alert('请先选择src!');
+        return;
+    }
+
+    // res
     const res = await window.electron.clickPickDestIPC();
-    console.log('pick dest', res);
+    if(!res || !res.length) return;
+
+    // set
+    that.setState({
+        destPath: res[0]
+    });
 }
 
 /**
