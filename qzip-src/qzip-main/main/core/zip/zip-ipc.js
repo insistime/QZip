@@ -39,5 +39,5 @@ ipcMain.handle(IPC_ZIP_CLICK_DEST, async () => {
 
 // ipc zip click go
 ipcMain.handle(IPC_ZIP_CLICK_GO, async (e, src, dest) => {
-    return zipOrUnzip(src, dest);
+    return await zipOrUnzip(src, dest);
 });
