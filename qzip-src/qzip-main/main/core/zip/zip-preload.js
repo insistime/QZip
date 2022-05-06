@@ -27,6 +27,6 @@ exports.clickPickDestIPC = async () => {
 /**
  * clickGoIPC
  */
-exports.clickGoIPC = async () => {
-    return await ipcRenderer.invoke(IPC_ZIP_CLICK_GO);
+exports.clickGoIPC = async (src, dest) => {
+    return await ipcRenderer.invoke(IPC_ZIP_CLICK_GO, src, dest);
 };

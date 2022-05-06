@@ -36,7 +36,21 @@ export const clickPickDest = async (that) => {
 /**
  * clickZipGo
  */
-export const clickZipGo = async () => {
-    const res = await window.electron.clickGoIPC();
-    console.log('go', res);
+export const clickZipGo = async (that) => {
+    // check
+    const src = that.state.srcPath;
+    if(!src){
+        alert('请先选择src!');
+        return;
+    }
+
+    // check
+    const dest = that.state.destPath;
+    if(!dest){
+        alert('请先选择dest!');
+        return;
+    }
+
+    const res = await window.electron.clickGoIPC(src, dest);
+    alert(res);
 }

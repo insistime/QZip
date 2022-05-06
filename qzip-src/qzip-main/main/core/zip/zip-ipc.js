@@ -9,6 +9,9 @@ const {
     dialogOpenFileAndFolder,
 } = require('qiao-electron');
 
+// zip main
+const { zipOrUnzip } = require('./zip-main.js');
+
 // const
 const { 
     IPC_ZIP_CLICK_SRC,
@@ -35,6 +38,6 @@ ipcMain.handle(IPC_ZIP_CLICK_DEST, async () => {
 });
 
 // ipc zip click go
-ipcMain.handle(IPC_ZIP_CLICK_GO, async () => {
-    return 3;
+ipcMain.handle(IPC_ZIP_CLICK_GO, async (e, src, dest) => {
+    return zipOrUnzip(src, dest);
 });
