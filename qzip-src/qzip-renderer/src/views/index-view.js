@@ -2,7 +2,7 @@
 
 // react
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 // index
 import IndexContainer from '@components/index/index.js';
@@ -18,7 +18,6 @@ class IndexView extends React.Component {
   }
 }
 
-ReactDOM.render(
-    <IndexView />,
-    document.getElementById('root')
-);
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<IndexView />);

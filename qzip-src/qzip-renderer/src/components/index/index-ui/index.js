@@ -17,6 +17,8 @@ export default class IndexComponent extends React.Component {
     return (
       <div className='index-container'>
         <IndexPath
+          srcPath = {this.props.srcPath}
+          destPath = {this.props.destPath}
           clickPickSrc = {this.props.clickPickSrc}
           clickPickDest = {this.props.clickPickDest}
         />

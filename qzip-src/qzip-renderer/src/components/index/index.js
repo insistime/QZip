@@ -10,7 +10,7 @@ import IndexComponent from './index-ui/index.js';
 import {
   clickPickSrc,
   clickPickDest,
-  clickGo,
+  clickZipGo,
 } from './index-fn/index.js';
 
 /**
@@ -21,15 +21,35 @@ export default class IndexContainer extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      srcPath: null,
+      destPath: null,
+    };
+
+    this.clickSrc = this.clickSrc.bind(this);
+    this.clickDest = this.clickDest.bind(this);
+    this.clickGo = this.clickGo.bind(this);
+  }
+
+  clickSrc(){
+    clickPickSrc(this);
+  }
+  clickDest(){
+    clickPickDest(this);
+  }
+  clickGo(){
+    clickZipGo(this);
   }
 
   render() {
     return (
       <IndexComponent
-        clickPickSrc = {clickPickSrc}
-        clickPickDest = {clickPickDest}
-        clickGo = {clickGo}
+        srcPath = {this.state.srcPath}
+        destPath = {this.state.destPath}
+
+        clickPickSrc = {this.clickSrc}
+        clickPickDest = {this.clickDest}
+        clickGo = {this.clickGo}
       />
     );
   }

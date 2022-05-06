@@ -3,9 +3,13 @@
 /**
  * clickPickSrc
  */
-export const clickPickSrc = async () => {
+export const clickPickSrc = async (that) => {
     const res = await window.electron.clickPickSrcIPC();
-    console.log('pick src', res);
+    if(!res || !res.length) return;
+
+    that.setState({
+        srcPath: res[0]
+    });
 }
 
 /**
@@ -17,9 +21,9 @@ export const clickPickDest = async () => {
 }
 
 /**
- * clickGo
+ * clickZipGo
  */
-export const clickGo = async () => {
+export const clickZipGo = async () => {
     const res = await window.electron.clickGoIPC();
     console.log('go', res);
 }

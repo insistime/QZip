@@ -18,6 +18,7 @@ export default class IndexPath extends React.Component {
                         {IndexConstant.srcText}
                     </div>
                     <div className='input'>
+                        <input value={this.props.srcPath} disabled/>
                     </div>
                     <div className='btn' onClick={this.props.clickPickSrc}>
                         {IndexConstant.srcBtn}
@@ -28,6 +29,7 @@ export default class IndexPath extends React.Component {
                         {IndexConstant.destText}
                     </div>
                     <div className='input'>
+                        <input value={this.props.destPath} disabled/>
                     </div>
                     <div className='btn' onClick={this.props.clickPickDest}>
                         {IndexConstant.destBtn}

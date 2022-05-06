@@ -18,8 +18,9 @@ ipcMain.handle(IPC_ZIP_CLICK_SRC, async () => {
     const res = await dialogOpenFileAndFolder({
         files: ['zip']
     });
-    console.log(res);
-    return 1;
+    if(!res || res.canceled) return;
+
+    return res.filePaths;
 });
 
 // ipc zip click dest

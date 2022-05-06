@@ -47,6 +47,19 @@ $btnBtnHeight: 40px;
                 margin: calc((($pathHeight / 2) - $pathDivHeight) / 2) auto;
                 border: solid 1px #333;
                 background-color: rgb(199, 199, 199);
+
+                
+                input{
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    
+                    font-size: 12px;
+                    line-height: $pathDivHeight - 2px;
+                    text-align: left;
+                }
             }
             .btn{
                 width: 60px;
