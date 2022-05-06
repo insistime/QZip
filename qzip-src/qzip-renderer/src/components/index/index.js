@@ -22,8 +22,8 @@ export default class IndexContainer extends React.Component {
     super(props);
 
     this.state = {
-      srcPath: null,
-      destPath: null,
+      srcPath: '',
+      destPath: '',
     };
 
     this.clickSrc = this.clickSrc.bind(this);
