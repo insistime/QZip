@@ -1,7 +1,7 @@
 'use strict';
 
 // react
-import { Component } from 'react';
+import React from 'react';
 
 // index
 import 'normalize.css';
@@ -12,7 +12,7 @@ import Indexbtn from './index-btn.js';
 /**
  * index component
  */
-export default class IndexComponent extends Component {
+export default class IndexComponent extends React.Component {
   render() {
     return (
       <div className='index-container'>
