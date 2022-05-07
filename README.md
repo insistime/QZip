@@ -3,6 +3,7 @@
 ## version
 ### 0.0.5.20220507
 1. qiao-webpack ncu
+2. antd ok
 
 ### 0.0.4.20220506
 1. zip ok
