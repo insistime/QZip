@@ -4,7 +4,7 @@
 import React from 'react';
 
 // antd
-import { Button } from 'antd';
+// import { Button } from 'antd';
 
 // index constant
 import { IndexConstant } from '../_constant.js';

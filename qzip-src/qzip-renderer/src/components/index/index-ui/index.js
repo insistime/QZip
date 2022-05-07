@@ -3,11 +3,6 @@
 // react
 import React from 'react';
 
-// css
-import 'normalize.css';
-
-// import 'antd/dist/antd.css';
-
 // index
 import './index.scss';
 import IndexPath from './index-path.js';
