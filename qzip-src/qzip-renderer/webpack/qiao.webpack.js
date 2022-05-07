@@ -26,4 +26,7 @@ module.exports = {
   resolve     : {
     alias: alias,
   },
+  performance : {
+    hints: false,
+  },
 };

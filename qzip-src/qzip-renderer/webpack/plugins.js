@@ -11,6 +11,12 @@ var templatePath = path.resolve(__dirname, './template.html');
  */
 module.exports = [
   {
+    type            : 'css',
+    filename        : '[name].css',
+    chunkFilename   : '[id].css',
+    ignoreOrder     : true,
+  },
+  {
     type    : 'html',
     inject  : 'body',
     title   : 'index',
