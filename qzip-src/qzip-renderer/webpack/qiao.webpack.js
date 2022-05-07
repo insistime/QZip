@@ -15,9 +15,6 @@ var output = require('./output.js');
 // plugins
 var plugins = require('./plugins.js');
 
-// optimization
-var optimization = require('./optimization.js');
-
 /**
  * qiao.webpack.js
  */
@@ -29,5 +26,4 @@ module.exports = {
   resolve     : {
     alias: alias,
   },
-  optimization: optimization,
 };
