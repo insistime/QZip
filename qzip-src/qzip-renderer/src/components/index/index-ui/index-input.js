@@ -1,7 +1,7 @@
 'use strict';
 
 // react
-import React from 'react';
+import { Component } from 'react';
 
 // index constant
 import { IndexConstant } from '../_constant.js';
@@ -9,7 +9,7 @@ import { IndexConstant } from '../_constant.js';
 /**
  * index input
  */
-export default class IndexInput extends React.Component {
+export default class IndexInput extends Component {
     render() {
         return (
             <div>

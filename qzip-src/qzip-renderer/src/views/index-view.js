@@ -1,7 +1,7 @@
 'use strict';
 
 // react
-import React from 'react';
+import { Component } from 'react';
 import { createRoot } from 'react-dom/client';
 
 // index
@@ -10,7 +10,7 @@ import IndexContainer from '@components/index/index.js';
 /**
  * index view
  */
-class IndexView extends React.Component {
+class IndexView extends Component {
   render() {
     return (
       <IndexContainer />

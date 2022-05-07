@@ -1,7 +1,7 @@
 'use strict';
 
 // react
-import React from 'react';
+import { Component } from 'react';
 
 // index ui
 import IndexComponent from './index-ui/index.js';
@@ -16,7 +16,7 @@ import {
 /**
  * index container
  */
-export default class IndexContainer extends React.Component {
+export default class IndexContainer extends Component {
 
   constructor(props) {
     super(props);
