@@ -15,11 +15,10 @@
     "analyzer": "qwebpack analyzer ./webpack/qiao.webpack.js"
   },
   "devDependencies": {
-    "qiao-webpack": "^0.4.7"
+    "qiao-webpack": "^0.4.9"
   },
   "dependencies": {
     "antd": "^4.20.2",
-    "normalize.css": "^8.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   }

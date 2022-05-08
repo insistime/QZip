@@ -16,6 +16,7 @@ module.exports = [
     chunkFilename   : '[id].css',
     ignoreOrder     : true,
   },
+  
   {
     type    : 'html',
     inject  : 'body',
