@@ -1,6 +1,6 @@
 {
   "name": "qzip",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "qzip main",
   "main": "./main/main.js",
   "dependencies": {
