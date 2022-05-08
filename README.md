@@ -1,6 +1,9 @@
 # qzip
 
 ## version
+### 0.0.6.20220508
+1. go btn by antd
+
 ### 0.0.5.20220507
 1. qiao-webpack ncu
 2. antd ok
