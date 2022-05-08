@@ -16,8 +16,9 @@ export default class IndexBtn extends React.Component {
     render() {
         return (
             <div className='index-btn'>
-                <div className='btn' onClick={this.props.clickGo}>{IndexConstant.goText}</div>
-                <Button type="primary">Primary Button</Button>
+                <div className='btn'>
+                    <Button type="primary" size="large" block onClick={this.props.clickGo}>{IndexConstant.goText}</Button>
+                </div>
             </div>
         );
     }
