@@ -4,7 +4,7 @@
 import React from 'react';
 
 // index input
-import IndexInput from './index-input.js';
+import IndexInput from './index-input.jsx';
 
 // index constant
 import { IndexConstant } from '../_constant.js';

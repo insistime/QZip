@@ -4,7 +4,7 @@
 var path = require('path');
 
 // entry path
-var indexPath = path.resolve(__dirname, '../src/views/index-view.js');
+var indexPath = path.resolve(__dirname, '../src/views/index-view.jsx');
 
 // entry
 module.exports = {

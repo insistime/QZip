@@ -5,8 +5,8 @@ import React from 'react';
 
 // index
 import './index.scss';
-import IndexPath from './index-path.js';
-import Indexbtn from './index-btn.js';
+import IndexPath from './index-path.jsx';
+import Indexbtn from './index-btn.jsx';
 
 /**
  * index component

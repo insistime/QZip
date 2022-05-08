@@ -4,7 +4,7 @@
 import React from 'react';
 
 // index ui
-import IndexComponent from './index-ui/index.js';
+import IndexComponent from './index-ui/index.jsx';
 
 // index func
 import {
